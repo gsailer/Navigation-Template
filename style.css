@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#nav{
+    height: 28px;
+    width: 100%;
+    background-color: rgb(53,56,57); 
+}
+#nav ul{
+    list-style: none;
+}
+#nav ul li {
+    float: left;
+    width: 125px;
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+}
+#nav ul li a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(246,246,246);
+}
+
+#nav ul li:hover{
+    background-color: rgba(0, 118, 255, 0.58);
+}
+
+#nav li:hover ul{
+    left: auto;
+    /* funzt nur wegen dem position: absolute bei dem li ul 
+       dadurch wird das li ul Element abhängig von #nav ul */
+}
+#nav li li {
+    float: none;
+    background-color: rgba(53, 56, 57, 0.9);
+}
+
+#nav li ul {
+    position: absolute;
+    left: -1000px;
+}
